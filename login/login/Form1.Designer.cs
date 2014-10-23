@@ -33,15 +33,14 @@
             this.txtPWD = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnNewUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAccess
             // 
-            this.btnAccess.Location = new System.Drawing.Point(86, 65);
+            this.btnAccess.Location = new System.Drawing.Point(107, 81);
             this.btnAccess.Name = "btnAccess";
-            this.btnAccess.Size = new System.Drawing.Size(100, 23);
+            this.btnAccess.Size = new System.Drawing.Size(180, 23);
             this.btnAccess.TabIndex = 0;
             this.btnAccess.Text = "Go";
             this.btnAccess.UseVisualStyleBackColor = true;
@@ -49,50 +48,56 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(86, 12);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(107, 9);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.Size = new System.Drawing.Size(180, 24);
             this.txtEmail.TabIndex = 1;
             // 
             // txtPWD
             // 
-            this.txtPWD.Location = new System.Drawing.Point(86, 39);
+            this.txtPWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPWD.Location = new System.Drawing.Point(107, 39);
             this.txtPWD.Name = "txtPWD";
-            this.txtPWD.Size = new System.Drawing.Size(100, 20);
+            this.txtPWD.Size = new System.Drawing.Size(180, 24);
             this.txtPWD.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 15);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Usuario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 42);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(89, 18);
             this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.label2.Text = "Contraseña:";
             // 
-            // dataGridView1
+            // btnNewUser
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 113);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 5;
+            this.btnNewUser.Location = new System.Drawing.Point(107, 111);
+            this.btnNewUser.Name = "btnNewUser";
+            this.btnNewUser.Size = new System.Drawing.Size(180, 23);
+            this.btnNewUser.TabIndex = 5;
+            this.btnNewUser.Text = "Nuevo Usuario";
+            this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 315);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(303, 180);
+            this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPWD);
@@ -101,8 +106,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,7 +120,7 @@
         private System.Windows.Forms.TextBox txtPWD;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnNewUser;
     }
 }
 
