@@ -13,6 +13,7 @@ namespace login
 {
     public partial class FormLogin : Form
     {
+        DataTable myDataTable;
         public FormLogin()
         {
             InitializeComponent();
@@ -20,12 +21,23 @@ namespace login
 
         private void btnAccess_Click(object sender, EventArgs e)
         {
-            string validUser = "select * from users where email = '{0}'and pwd='{1}'";
+            myLogin();
+        }
+
+        private void btnNewUser_Click(object sender, EventArgs e)
+        {
+            FormRegistrar myFormRegistrar = new FormRegistrar();
+            myFormRegistrar.ShowDialog();
+        }
+
+        private void myLogin()
+        {
+            string validUser = "select email, pwd from users where email = '{0}'and pwd='{1}'";
             validUser = string.Format(validUser, txtEmail.Text, txtPWD.Text);
 
             try
             {
-                DataTable myDataTable = new DataTable();
+                myDataTable = new DataTable();
                 SqlCommand myCommand = new SqlCommand(validUser, MyConnection.GetConnection());
                 SqlDataAdapter myDataAdapter = new SqlDataAdapter(myCommand);
 
@@ -46,16 +58,13 @@ namespace login
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
 
-            } 
+            }
         }
 
-        private void btnNewUser_Click(object sender, EventArgs e)
-        {
-
-        }        
+        
     }
 }

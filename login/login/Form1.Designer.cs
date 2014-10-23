@@ -38,7 +38,7 @@
             // 
             // btnAccess
             // 
-            this.btnAccess.Location = new System.Drawing.Point(107, 81);
+            this.btnAccess.Location = new System.Drawing.Point(107, 69);
             this.btnAccess.Name = "btnAccess";
             this.btnAccess.Size = new System.Drawing.Size(180, 23);
             this.btnAccess.TabIndex = 0;
@@ -59,6 +59,7 @@
             this.txtPWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPWD.Location = new System.Drawing.Point(107, 39);
             this.txtPWD.Name = "txtPWD";
+            this.txtPWD.PasswordChar = '*';
             this.txtPWD.Size = new System.Drawing.Size(180, 24);
             this.txtPWD.TabIndex = 2;
             // 
@@ -84,7 +85,7 @@
             // 
             // btnNewUser
             // 
-            this.btnNewUser.Location = new System.Drawing.Point(107, 111);
+            this.btnNewUser.Location = new System.Drawing.Point(107, 98);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(180, 23);
             this.btnNewUser.TabIndex = 5;
@@ -96,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(303, 180);
+            this.ClientSize = new System.Drawing.Size(303, 138);
             this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
